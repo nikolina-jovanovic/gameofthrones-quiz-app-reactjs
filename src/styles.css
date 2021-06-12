@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url('./images/GOTwp2Blurred.jpg');
+  background-position: center center;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  font-family: "Salsa", cursive;
+  font-size: 20px;
+  transition: 0.3s ease all;
+}
+
+.App,
+.start,
+.score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 550px;
+  height: 450px;
+  border: 0px solid rgba(53, 53, 53, 0.774);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.658);
+  color: rgb(61, 194, 243);
+  padding: 30px;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 24px;
+  transition: 0.3s ease all;
+}
+
+.input-name {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(61, 194, 243);
+  background: transparent;
+  margin-bottom: 100px;
+  color: rgb(61, 194, 243);
+  width: 180px;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 24px;
+}
+
+.input-name:focus {
+  color: rgb(61, 194, 243);
+  font-family: "Baloo Da 2", cursive;
+  font-size: 27px;
+}
+
+.input-btn,
+.start-btn,
+.next-btn,
+.tryAgain-btn {
+  margin-bottom: 100px;
+  width: 140px;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.726);
+  background: rgb(61, 194, 243);
+  font-size: 25px;
+  margin-left: 20px;
+  border: 0px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Baloo Da 2", cursive;
+}
+
+.input-btn:hover,
+.tryAgain-btn:hover {
+  transform: scale(1.1);
+  width: 160px;
+  transition: width 1.5s;
+}
+
+.next-btn:hover{
+  transform: scale(1.1);
+  width: 100px;
+  transition: width 1.5s;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  width: 200px !important;
+  transition: width 1.5s;
+}
+
+.answer-section:hover {
+  transform: scale(0.95);
+  transition: 0.3s ease;
+}
+
+.answer-section:focus {
+  background: rgba(0, 0, 0, 0.726);
+  color: rgb(61, 194, 243);
+  border: 2px solid;
+}
+
+.answer-section:not(:hover),
+.input-btn:not(:hover),
+.start-btn:not(:hover),
+.next-btn:not(:hover),
+.tryAgain-btn:not(:hover) {
+  transition: 0.7s;
+}
+
+.quiz {
+  width: 720px;
+  height: 580px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  border: 0px solid rgba(53, 53, 53, 0.774);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.623);
+  color: rgb(61, 194, 243);
+  font-size: 21px;
+  padding: 10px;
+  font-family: "Salsa", cursive;
+  transition: 0.3s ease all;
+}
+
+.answer-section {
+  cursor: pointer;
+  margin: 10px;
+  width: 500px;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.726);
+  background: rgb(61, 194, 243);
+  font-size: 22px;
+  border: 0px solid;
+  border-radius: 20px;
+  font-family: "Salsa", cursive;
+}
+
+.next-btn {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 80px;
+  float: right;
+  cursor: pointer;
+  font-family: "Baloo Da 2", cursive;
+}
